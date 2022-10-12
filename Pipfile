@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ml-metadata = {path = "./ml_metadata-1.10.0-cp39-cp39-macosx_10_14_x86_64.whl"}
+packaging = "*"
+typing-extensions = "*"
+absl-py = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

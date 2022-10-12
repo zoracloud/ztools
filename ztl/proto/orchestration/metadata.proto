@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package orchestration;
+
+import "ml_metadata/proto/metadata_store.proto";
+import "ml_metadata/proto/metadata_store_service.proto";
+
+// Connection config for ML Metadata.
+message MLMDConnectionConfig {
+  reserved 3;
+  oneof connection_config {
+    ml_metadata.ConnectionConfig database_connection_config = 1;
+    ml_metadata.MetadataStoreClientConfig mlmd_store_client_config = 2;
+  }
+}
